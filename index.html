@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <!-- Authour Emily Reger 2023 -->
+      <meta charset="UTF-8">
+      <title>Final for GTT480</title>
+      <!-- Links I copied from Codepen -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" defer></script>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+      <!-- Slick JQuery plugins -->
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+      <!-- My CSS and style sheets -->
+      <link href="style.css" rel="stylesheet">
+      <script src="script.js" defer></script> 
+   </head>
+   <body>
+        <header>
+            <nav>
+                <ol>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#info">Info</a></li>
+                </ol>
+            </nav>
+            <span id="top" class="heroimg">
+                <img src="imgs/sign2.png" alt="sign of Fehrenbacher Hof title outside of the coffee shop">
+            </span>
+            <span class="fix">
+            <a href="#top"><img class="arrowimg" src="imgs/up-arrow.png" alt="up-arrow in a circle.Up-arrow icons created by dmitri13 - Flaticon"></a>
+            </span>
+        </header>
+        <main>
+            <section id="about">
+                <div class="hgrid">
+                <h1>About</h1>
+                <h2>Established in 2001</h2>
+                </div>
+                <section>
+                    <div>
+                        <p>
+                            "The Hof" as locals know it wouldn't be here if it wasn't for a 
+                            dedicated stream of staff and clientele who believe that a coffee house
+                             is more than just a place to buy coffee. It's also a place to meet 
+                             people, create community, and think. The great Coffee Houses of the 
+                             world have have been gathering places for poets, intellectuals, and 
+                             revolutionaries; they have allowed the wild thoughts of inventors and 
+                             entrepreneurs to have space and time to run free; perhaps coffee 
+                             houses have also cloaked those who wish to hide out, who wish not to 
+                             be found ... who wish simply to be.
+                        </p>
+                        <p>
+                            The Clark Family, who also own and operate Goose Hollow Inn next door, 
+                            opened The Hof in 2001, after the space had served for years as a break 
+                            room, shop, walk-in cooler, and apartment ... among other things.  It's 
+                            name, Fehrenbacher Hof, honors Sigrid Antonia Fehrenbacher, wife of 
+                            former Mayor Bud Clark, the proprietor of Goose Hollow Inn. It also 
+                            honors Frieda Fehrenbacher, artist and professor. The coffee house is 
+                            decorated with antique toasters, egg beaters, violins, and various other 
+                            items from Sigrid's collections as both a violinist and antique dealer; 
+                            and the back room features a fantastic piece of Frieda's work, Hephaestus
+                             breaking open Zeus's skull to birth Athena. Bud chose this artwork for 
+                             the Hof from Frieda's collection, thinking that it well-expressed the 
+                             headache we all sometimes feel when we really want our cup of coffee! 
+                        </p>
+                        <p>
+                            Well, maybe we can't rid you of your headache, but maybe a visit to our 
+                            corner of the world will bring you a moment of respite, a sip of pleasure, 
+                            a new insight, a reason to meet with a friend and rekindle a relationship.  
+                            "Escape to Goose Hollow". 
+                        </p>
+                    </div>
+                    <div class = "slick-carousel" >
+                        <div><img src="imgs/budclark1.png" alt="Picture of Bud Clark"></div>
+                        <div><img src="imgs/Expose Art.png" alt="Picture expose yourself to art poster, with Bud Clark in front of an art statue"></div>
+                        <div><img src="imgs/inside.png"alt="Picture of inside of Fehrenbacher Hof"></div>
+                        <div><img src="imgs/Logo.png" alt="Picture the logo for Goosehollow Inn"></div>
+                    </div>
+                </section>
+
+            </section>
+            <section id="menu">
+                <h1 id="subsec-topic" class="sr-only">Menu</h1>
+		        <section id="accordion" class="subsec" aria-labelled-by="subsec-topic">
+			        <h2>Espresso, Craft Drinks and Tea</h2>
+			            <section class="no_shadow">
+				            <p> Espresso or Americano
+                                A double ristretto shot of Coava S.O blend espresso. A quad is 4.50
+                                $3.
+                            </p>
+                            <p>
+                                Latte or Cappucino, 12 oz
+                                Served with whole milk. Substitute soy, almond, or coconut milk for .75 and oat or hemp for 1.10
+                                $4.25
+                            </p>
+                            <p>
+                                Chai, 12 oz, choice of spicy or sweet
+                                We offer Spicy Dragonfly or Sweet Oregon Chai. Feeling in-between, you can have yours sweet-&-spicy. Price listed is with whole milk. Substitute soy, almond or coconut milk for .75 and oat or hemp for 1.10
+                                $4.25
+                            </p>
+                            <p>
+                                Einspanner, two shots
+                                A whimsical German espresso drink, simply prepared with raw sugar and topped with whipped cream. Price listed is for a double ristretto shot.
+                                $3.50
+                            </p>
+                            <p>
+                                Tea latte - your choice, 12 oz
+                                So many choices in the latte world, when it comes to tea. If you're craving a little pick-me-up in the afternoon, but want to stay away from coffee, a tea latte might just do the trick. Served with whole milk. Substitute soy, almond, or coconut milk for .75 and oat or hemp for 1.10
+                                $3.50
+                            </p>
+                            <p>
+                                Mocha, 12 oz
+                                We use Holy Kakow! Cocoa, made with Heirloom single-origin cacao and rich Colombian sugar. Whipped cream is complimentary, on request. Served with whole milk. Substitute soy, almond, or coconut milk for .75 and oat or hemp for 1.10
+                                $4.75
+                            </p>
+                            <p>
+                                Caramel Turtle, 12 oz
+                                Thick caramel sauce, Holy Kakow! organic chocolate sauce, espresso, steamed milk, and whipped cream on request. Served with whole milk. Substitute soy, almond, or coconut milk for .75 and oat or hemp for 1.10
+                                $5
+                            </p>
+                            <p>
+                                Cold Brew Coffee, 16 oz
+                                We make our own using Longbottom's rich, dark "Black Gold" organic, fair-trade coffee beans. 20 oz option available for 4.25.
+                                $3.75
+                            </p>
+                            <p>
+                                Italian Soda, 16 oz
+                                Choose from a wide selection of Monin syrups, such as Raspberry, Peach, and Lavender. Add half and half or whipping cream for a delicious treat.
+                                $2.75
+                            </p>
+                            <p>
+                                Whole Leaf Teas, for here or to go
+                                We have a great selection of whole leaf teas from Jasmine Pearl Tea Merchants. Come by and check it out.
+                                $3
+                            </p>
+			            </section>
+			        <h2>Hot Food and Pastries</h2>
+			            <section class="no_shadow">
+				            <p>
+                                Breakfast Sandwich
+                                Each sandwich is baked to deliciousness. English muffin slathered with Reuben sauce, your choice of ham, Morningstar veggie sausage, or avocado (or add $1.00 for our haus-cooked corned beef), a thick slice of Tillamook cheddar, and a slice of tomato (added at the end). Plain sandwich without the protein or avo filler is 5.00
+                                $6
+                            </p>
+                            <p>
+                                Breakfast Burrito
+                                Filled with mini potato patties, Tillamook cheddar, a whole baked egg, choice of filling (avocado, Morningstar vegetarian breakfast sausage, ham or corned beef (add 1.00 for corned beef), salsa, and sour cream.
+                                $7
+                            </p>
+                            <p>
+                                Homemade Granola-coming soon!
+                                Oats, raisins, cranberries, sliced almonds, and oat bran are just some of the goodies in our house granola.
+                                $6
+                            </p>
+                            <p>
+                                Homemade muffin
+                                Fresh daily
+                                $3
+                            </p>
+                            <p>
+                                Banana or Harvest Bread
+                                $3.25
+                            </p>
+			            </section>
+                </section>
+                        <section class="menuitems">
+                            <div><img src="imgs/breakfast sandwich.jpg" alt="breakfast sandwich with egg cheese and bacon"></div>
+                            <div><img src="imgs/coffee.jpg" alt="4 cups of coffee with differnt amounts of milk"></div>
+                            <div><img src="imgs/pastry.jpg" alt="pastry with powder sugar"></div>
+                            <div><img src="imgs/tea.jpg" alt="mug with a bag of tea"></div>
+                        </section>
+                
+            </section>
+            <section id="info" class="hgrid">
+                <div>
+                    <h1>Info</h1>
+                    <h2>Address</h2>
+                    <p>1225 SW 19th Avenue, Portland, OR 97205</p>
+                    <h2>Hours of Operation</h2>
+                    <p>Sunday-Saturday 7:00AM-2:00PM</p>
+                    <h2>Phone Number</h2>
+                    <p>(503) 223-4493</p>
+                </div>
+                <section class="grid2">
+                    <a href="https://www.facebook.com/FehrenbacherHof/"><img src="imgs/facebook-app-symbol.png" alt="facebook logo.Facebook icons created by Freepik - Flaticon"></a>
+                    <a href="https://www.instagram.com/fehrenbacherhof/?hl=en"><img src="imgs/instagram.png" alt="Instagram logo. Instagram icons created by Freepik - Flaticon"></a>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>www.fehrenbacherhof.com</p>
+            <p>Emily Reger GIT480 Final 2023</p>
+        </footer>
+        
+   </body>
+   </html>

@@ -1,0 +1,253 @@
+/*Author Emily Reger - 2023*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Libre+Bodoni:wght@400;500;600;700&family=Onest:wght@400;500;600;700&display=swap');
+/* Google font  Libre Baskerville, Libre Bodini, Onest*/
+
+/* 
+font-family: 'Libre Baskerville', serif;
+font-family: 'Libre Bodoni', serif;
+font-family: 'Onest', sans-serif; 
+*/
+
+
+
+/* REST CODE */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --------END OF RESET-------- */
+
+:root {
+    --red: #6a1017;
+    --brown: #90633c;
+    --yellow: #dbd56e;
+    --green: #517444;
+    --offwhite: #f9f5f1;
+}
+
+/* HTML/BODY/MAIN */
+h1 {
+	font-family: 'Libre Bodoni', serif;
+	color: var(--green);
+	font-size: 2em;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: .5em;
+}
+h2 {
+	font-family: 'Libre Bodoni', serif;
+	color: var(--brown);
+	font-size: 1em;
+	text-align: center;
+}
+
+p {
+	font-family: 'Onest', sans-serif; 
+	padding: 1em;
+}
+
+html {
+	background-color: var(--offwhite);
+}
+
+/* HEADER */
+
+span.heroimg img {
+	width: 100%;
+	height: auto;
+}
+
+img.arrowimg{
+	width: 50%;
+	height: auto;
+}
+
+.fix {
+	position: fixed;
+	bottom: 5px;
+	left: 80%;
+}
+
+nav {
+	position: sticky; 
+	top: 0;
+	background-color: var(--green);
+	width: auto;
+	padding-left: 20%;
+ }
+ 
+ nav ol {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+	width: auto;
+	text-align: center;
+	color: var(--offwhite);
+ }
+ 
+ a:link {
+    text-decoration: none;
+    color: var(--lemon-chiffon);
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: var(--lemon-chiffon);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+
+  /* ABOUT */
+#about, #menu, #info, footer {
+	border-top: 1rem solid var(--red) ;
+}
+
+/* JQUERY Slick Plugin */
+/* Defines the width of the carousel and centers it on the page */
+
+div .slick-carousel {
+   margin: 0 auto;
+   width: 100%;
+ }
+ 
+ .slick-carousel img {
+	width: 100%;
+	height: auto;
+ }
+
+ button, input[type=submit] {
+	font-family: 'Libre Bodoni', serif;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	background-color: var(--yellow);
+	font-weight: bold;
+	font-size: 2em;
+	color: black;
+	border-radius: 5px;
+ }
+
+ /* MENU */
+ .ui-accordion-header {
+	color: var(--red);
+ }
+
+ .menuitems div {
+	margin: auto;
+	width: 80%;
+	padding: 1em;
+ }
+
+ /* INFO */
+
+ #info p {
+	text-align: center;
+ }
+
+ #info section.grid2 {
+	margin: auto;
+	width: 50%;
+	padding-left: 10%;
+	padding-bottom: 10%;
+	padding-top: 10%;
+  }
+
+  .grid2 {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid2 img {
+	width: 50%;
+	height: auto;
+  }
+
+  /* FOOTER */
+
+  footer {
+	background-color: var(--yellow);
+	text-align: center;
+	line-height: .02em;
+	padding-bottom: 1em;
+  }
+
+  /* TABLET VIEWPORT */
+  @media only screen and (max-width: 1007px) and (min-width: 641px)  {
+	#about h1 {
+		text-align: left;
+		padding: 1.5em;
+		width: 20%;
+	}
+	#about h2 {
+		text-align: left;
+		padding-top: 3em;
+	}
+	.hgrid{
+		display: grid;
+    	grid-template-columns: 1fr 1fr;
+	}	
+
+	p {
+		padding: 2em;
+	}
+	.menuitems {
+		display: grid;
+    	grid-template-columns: 1fr 1fr;
+	}
+	#info h1, #info h2{
+		text-align: center;
+	}
+}
